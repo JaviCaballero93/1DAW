@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import javax.swing.*;
 
-public class mathLearning {
+public class MathLearning {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
