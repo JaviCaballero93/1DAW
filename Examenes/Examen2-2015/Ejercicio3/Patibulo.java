@@ -3,7 +3,7 @@ package practica;
 import java.awt.*;
 import javax.swing.*;
 
-public class patibulo extends JPanel{
+public class Patibulo extends JPanel{
 	
 	@Override
 	public void paintComponent (Graphics g){
