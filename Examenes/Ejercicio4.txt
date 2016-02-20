@@ -1,0 +1,5 @@
+El polimorfismo consiste en obtener un mismo método con diferentes funciones, es decir, 
+suponiendo que tengamos una clase Saludo con el método Saludo el cual sería su constructor, 
+pero en este caso tendríamos varios constructores pero siempre siguiendo las reglas de 
+independencia en cuestión a los parámetros de cada constructor para que así puedan 
+diferenciarse uno de otro, sin embargo cada uno tendrá diferentes procesos internos en sí mismo.
