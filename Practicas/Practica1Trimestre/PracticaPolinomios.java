@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class PracticaPolinomio {
 
-	public static void main(String[] args) {
+        public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[]polinomio1 = polinomio();
 		int[]polinomio2 = polinomio();
@@ -51,7 +51,7 @@ public class PracticaPolinomio {
 		
 		//Introducimos el grado mayor del polinomio que vamos a introducir.
 		int grado = Integer.parseInt(JOptionPane.showInputDialog("Introduce el grado del polinomio:"));
-		//Al grado introducido le sumamos 1 para obtener el tamaño del array donde estara el polinomio(grado + 1)
+		//Al grado introducido le sumamos 1 para obtener el tamaÃ±o del array donde estara el polinomio(grado + 1)
 		int[]polinomio = new int[grado + 1];
 		int i;
 		
@@ -60,7 +60,7 @@ public class PracticaPolinomio {
 			polinomio[i] = Integer.parseInt(JOptionPane.showInputDialog("Introduce el valor para X^" + i + ":"));
 		}
 		//Introducimos por ultimoo el valor que tendria el valor sin 'x'
-		polinomio[0] = Integer.parseInt(JOptionPane.showInputDialog("Introduce el valor para el número(variable sin 'x')"));
+		polinomio[0] = Integer.parseInt(JOptionPane.showInputDialog("Introduce el valor para el nÃºmero(variable sin 'x')"));
 		
 		return polinomio;
 	}
