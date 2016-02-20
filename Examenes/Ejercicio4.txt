@@ -1,0 +1,8 @@
+No se puede, ya que al declarar un array(datatype[] arrayname) el nombre del array es una referencia
+a una "lista indexada" cuyos indices apuntan a posiciones de memoria donde se almacenan una serie de 
+valores.
+
+Al declarar los argumentos de un método, si uno de éstos es un array, lo que se "pasa" al método es la
+referencia a esa lista indexada. Por tanto, las modificaciones que puedan realizarse sobre los valores 
+almacenados en el array durante la ejecución de métodos, perduran después de acabar el médoto y volver
+al punto del programa donde fue invocado.
