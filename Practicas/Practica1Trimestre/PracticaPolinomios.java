@@ -133,8 +133,7 @@ public class PracticaPolinomio {
 		return mult;
 	}
 	/*La division esta incompleta, me da un error que se me repite el bucle dos veces. Te lo envio asi para
-	que me lo corrijas y asi poder aprender en donde esta el fallo. Los visualizar("lo que sea") son 
-	orientativos para ver como va progresando el metodo.*/
+	que me lo corrijas y asi poder aprender en donde esta el fallo.*/
 	public static int[][]divPolinomio(int[]poli1, int[]poli2) {
 		
 		if(poli1.length<poli2.length) {
@@ -154,13 +153,9 @@ public class PracticaPolinomio {
 			
 			cociente[i] = resto[resto.length-1-count] / poli2[poli2.length-1];
 						
-			visualizar(cociente);
-						
 			for(int j=0; j<=poli2.length-1; j++) {
 				mult[j+(poli1.length-poli2.length)-count] = cociente[i] * poli2[j];
 			}
-					
-			visualizar(mult);
 					
 			for(int j=0; j<=mult.length-1; j++) {
 				resto[j] = resto[j] - mult[j];
@@ -169,8 +164,6 @@ public class PracticaPolinomio {
 			for(int j=0; j<=mult.length-1; j++) {
 				mult[j] = 0;
 			}
-			
-			visualizar(resto);
 			
 			count++;
 			i--;
