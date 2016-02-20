@@ -5,14 +5,14 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int fil = Integer.parseInt(JOptionPane.showInputDialog("Introduce el número de filas que tendra la matriz."));
-		int col = Integer.parseInt(JOptionPane.showInputDialog("Ahora el número de columnas que tendra la matriz."));
+		int fil = Integer.parseInt(JOptionPane.showInputDialog("Introduce el nÃºmero de filas que tendra la matriz."));
+		int col = Integer.parseInt(JOptionPane.showInputDialog("Ahora el nÃºmero de columnas que tendra la matriz."));
 		
 		int[][] matriz = new int[fil][col];
 		
 		for(int i=0; i<matriz.length; i++) {
 			for(int j=0; j<matriz[i].length; j++) {
-				matriz[i][j]= Integer.parseInt(JOptionPane.showInputDialog("Introduce un valor para la posición" + i + j));
+				matriz[i][j]= Integer.parseInt(JOptionPane.showInputDialog("Introduce un valor para la posiciÃ³n" + i + j));
 			}
 		}
 		
