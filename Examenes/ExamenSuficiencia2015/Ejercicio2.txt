@@ -1,0 +1,37 @@
+public class Ventana extends Frame implements MouseMotionListener {
+	Label text = new Label ();
+
+	public Ventana() {
+		setBounds(0, 0, 200, 200);
+        	SetLayout(null);                                          //1
+		add(text);                                                //2
+		text.setBounds(1, 30, 100, 20);
+		addMouseMotionListener(this);
+	}
+
+	public void mouseDragged (MouseEvent ev) {
+		text.setText("(" + ev.getX() + "," + ev.getY() + ")");
+		//text.setLocation(ev.getPoint());                        //3
+	}
+
+	public void mouseMoved(MouseEvent ev) {}
+
+	public static void main(String args[]) {
+		Ventana miVentana = new Ventana();
+		miVentana.setVisible(true);
+	}
+}
+	
+a)Describe la interfaz que se define y su funcionamiento cuando se ejecuta el programa.
+
+Al arrancar se abre una ventana en blanco. Al arrastrar sobre la ventana el ratón pulsado, aparecen en 
+la esquina superior izquierda de la ventana las coordenadas de la posición del ratón según se sigue
+moviendo. Cuando el ratón se detiene o se suelta el botón, las coordenadas no cambian.
+
+b)¿Que ocurriría si se quita el comentario en la línea 3? ¿Y si se elimina la línea 1 y se substituye 2 por
+“add("Center",text);”? Razonar las respuestas.
+
+Si se quita el comentario de la 4, el texto que muestra las coordenadas se mueve siguiendo el ratón. 
+Si se hace el otro cambio, el Label text ocupa toda la ventana tapando todo el área de ésta, de forma
+que los eventos de ratón los emite el Label y no la ventana. Por lo tanto la ventana no recibe estos
+eventos y permanece en blanco todo el tiempo.
