@@ -6,18 +6,27 @@ public class Ahorcado {
 	private char[]letrasIntroducidas;
 	private int turnos;
 	private int fallos;
+	private Dictionary dict;
+	
 	
 	public Ahorcado() {
 		// TODO Auto-generated constructor stub
-		this("Ahorcado");
+		this("C:/Dict.txt");
 	}
 	
-	public Ahorcado(String palabraInicial) {
+	public Ahorcado(String dictionaryPath) {
 		
-		this.palabra = palabraInicial.toUpperCase();
+		dict = new Dictionary(dictionaryPath);
+		
+		this.palabra = dict.getRandom().toUpperCase();
 		letrasIntroducidas = new char[25];
 		turnos = 0;
 		fallos = 0;
+	}
+	
+	public String randomizePalabra() {
+		
+		return dict.getRandom().toLowerCase();
 	}
 	
 	public boolean buscarLetra(char letra) {
