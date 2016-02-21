@@ -38,7 +38,7 @@ public class Password {
         
     	for (int i=0; i<longitud; i++) {
             //Generamos un numero aleatorio, segun este elige si añadir una minuscula, mayuscula o numero
-            int eleccion = ((int)Math.floor(Math.random()* 3 + 1));
+            int eleccion = (int)(Math.floor(Math.random()* 3 + 1));
  
             if (eleccion==1) {
             	
