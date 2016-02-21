@@ -7,10 +7,10 @@ public class AhorcadoTest {
 
 	public static void main(String[]args) {
 		
-		Ahorcado ahorcado = new Ahorcado(JOptionPane.showInputDialog("Introduce una palabra: "));
+		Ahorcado ahorcado = new Ahorcado();
 		
 		do {
-			String text = JOptionPane.showInputDialog(ahorcado.getPalabraOculta() + "\n"
+			String text = JOptionPane.showInputDialog("*****JUEGO DEL AHORCADO*****\n" + ahorcado.getPalabraOculta() + "\n"
 					+ ahorcado.getFallos() + "\n" + ahorcado.getIntroducidasString() + 
 					"\nIntroduce una letra: ");
 			char letra = text.charAt(0);
