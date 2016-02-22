@@ -89,7 +89,6 @@ public abstract class ConstruirTablero {
 			
 			pos = new Posicion(1, i);
 			piezas[1][i] = new Peon(Jugador.BLANCO, pos, tablero);
-			
 		}
 	}
 	
@@ -123,8 +122,6 @@ public abstract class ConstruirTablero {
 			
 			pos = new Posicion(6, i);
 			piezas[6][i] = new Peon(Jugador.NEGRO, pos, tablero);
-			
 		}
 	}
 }
- 
