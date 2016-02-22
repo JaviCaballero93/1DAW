@@ -17,5 +17,4 @@ public class Motor {
 		else
 			return Jugador.BLANCO;
 	}
-
 }
