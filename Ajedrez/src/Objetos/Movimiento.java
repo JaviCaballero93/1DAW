@@ -7,7 +7,6 @@ public class Movimiento {
 	private Posicion posInicial;
 	private Posicion posFinal;
 	private Pieza piezaMovida;
-	@SuppressWarnings("unused")
 	private boolean enroque;
 
 	public Movimiento(Posicion posInicial, Posicion posFinal, Pieza piezaMovida) {
