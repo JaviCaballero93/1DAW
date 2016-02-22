@@ -1,6 +1,5 @@
-package test;
-
-import human.Persona;
-import objects.Cola;
-
+public class ColaTest() {
+        
+        
+}
  
