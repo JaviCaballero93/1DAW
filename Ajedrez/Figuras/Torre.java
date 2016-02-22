@@ -1,4 +1,4 @@
-package piezas;
+package figuras;
 
 import objetos.*;
 
@@ -53,68 +53,68 @@ public class Torre extends Pieza {
 		
 		int col = posicionActual.getColumnas();
 		
-        for (int i = posicionActual.getFilas() - 1; i >= 0; i--) {
-            Posicion pos = new Posicion(i, col);
+        	for (int i = posicionActual.getFilas() - 1; i >= 0; i--) {
+            		Posicion pos = new Posicion(i, col);
             
-            if (tablero.isPosicionVacia(pos)) 
-                addMovimiento(pos);
+            		if (tablero.isPosicionVacia(pos)) 
+                		addMovimiento(pos);
             
-            else {
-                comprobarEncontrado(pos);
-                return;
-            }
-        }
+            		else {
+                		comprobarEncontrado(pos);
+                		return;
+            		}
+        	}
 	}
 	
 	private void goSur() {
 		
 		int col = posicionActual.getColumnas();
 		
-        for (int i = posicionActual.getFilas() + 1; i<8; i++) {
-            Posicion pos = new Posicion(i, col);
+        	for (int i = posicionActual.getFilas() + 1; i<8; i++) {
+            		Posicion pos = new Posicion(i, col);
             
-            if (tablero.isPosicionVacia(pos)) 
-                addMovimiento(pos);
+            		if (tablero.isPosicionVacia(pos)) 
+        	  		addMovimiento(pos);
             
-            else {
-                comprobarEncontrado(pos);
-                return;
-            }
-        }
+            		else {
+                		comprobarEncontrado(pos);
+                		return;
+            		}
+        	}
 	}
 	
 	private void goEste() {
 		
 		int fil = posicionActual.getFilas();
 		
-        for (int i = posicionActual.getColumnas() + 1; i<8; i++) {
-            Posicion pos = new Posicion(i, fil);
-            
-            if (tablero.isPosicionVacia(pos)) 
-                addMovimiento(pos);
-            
-            else {
-                comprobarEncontrado(pos);
-                return;
-            }
-        }
+	        for (int i = posicionActual.getColumnas() + 1; i<8; i++) {
+	            Posicion pos = new Posicion(i, fil);
+	            
+	            if (tablero.isPosicionVacia(pos)) 
+	                addMovimiento(pos);
+	            
+	            else {
+	                comprobarEncontrado(pos);
+	                return;
+	            }
+	        }
 	}
 	
 	private void goOeste() {
 		
 		int fil = posicionActual.getFilas();
 		
-        for (int i = posicionActual.getColumnas() - 1; i >= 0; i--) {
-            Posicion pos = new Posicion(i, fil);
-            
-            if (tablero.isPosicionVacia(pos)) 
-                addMovimiento(pos);
-            
-            else {
-                comprobarEncontrado(pos);
-                return;
-            }
-        }
+	        for (int i = posicionActual.getColumnas() - 1; i >= 0; i--) {
+	            Posicion pos = new Posicion(i, fil);
+	            
+	            if (tablero.isPosicionVacia(pos)) 
+	                addMovimiento(pos);
+	            
+	            else {
+	                comprobarEncontrado(pos);
+	                return;
+	            }
+        	}
 	}
 	
 	private void comprobarEncontrado(Posicion pos) {
