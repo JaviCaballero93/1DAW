@@ -2,7 +2,7 @@ package objetos;
 
 import java.util.*;
 import objetos.*;
-import piezas.*;
+import figuras.*;
 
 public class Tablero {
 	
