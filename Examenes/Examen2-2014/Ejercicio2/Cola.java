@@ -1,7 +1,6 @@
 package objects;
 
 import java.util.ArrayList;
-import human.Persona;
 
 public class Cola extends ArrayList<Persona> {
 
@@ -11,7 +10,6 @@ public class Cola extends ArrayList<Persona> {
 		
 	}
 
-	
 	public void colocar(Persona persona) {
 
 		if(isEmpty())
@@ -63,4 +61,3 @@ public class Cola extends ArrayList<Persona> {
 		}
 	}		
 }
-
