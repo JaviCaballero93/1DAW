@@ -1,7 +1,3 @@
-package piezas;
-
-import objetos.*;
-
 public class Alfil extends Pieza {
 	
 	private final String BLANCA = "img/alfilb.png";
