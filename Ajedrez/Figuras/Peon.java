@@ -1,7 +1,3 @@
-package piezas;
-
-import objetos.*;
-
 public class Peon extends Pieza {
 	
 	private final String BLANCA = "img/peonb.png";
