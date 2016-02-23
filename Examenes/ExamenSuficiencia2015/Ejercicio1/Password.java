@@ -41,18 +41,20 @@ public class Password {
             int eleccion = (int)(Math.floor(Math.random()* 3 + 1));
  
             if (eleccion==1) {
-            	
-                char minusculas = (char)(Math.floor(Math.random()* 26 + 'a'));
+            	//Generamos un número aleatorio entre 0 y 25 y le sumamos el caracter 'a'
+                char minusculas = (char)(Math.floor(Math.random() * 26 + 'a'));
                 password += minusculas;
             }
             
             else if(eleccion==2) {
-            	char mayusculas = (char)(Math.floor(Math.random()*26 + 'A'));
+            	//Generamos un número aleatorio entre 0 y 25 y le sumamos el caracter 'A'
+            	char mayusculas = (char)(Math.floor(Math.random() * 26 + 'A'));
                 password += mayusculas;
              }
             
             else {
-            	char numeros = (char)(Math.floor(Math.random()*10 + '0'));
+            	//Generamos un número aleatorio entre 0 y 9 y le sumamos el caracter '0'
+            	char numeros = (char)(Math.floor(Math.random() * 10 + '0'));
             	password += numeros;
             } 
         }
@@ -66,7 +68,7 @@ public class Password {
         int countMin = 0;
         int countMay = 0;
         
-        //Vamos caracter a caracter y comprobamos que tipo de caracter es
+        //Vamos caracter a caracter y comprobamos que tipo de caracter es.
         for (int i=0; i<contraseña.length(); i++) {
                 if(contraseña.charAt(i)>='a' && contraseña.charAt(i)<='z')
                     countMin += 1;
@@ -78,7 +80,7 @@ public class Password {
                     countNum += 1;
         }
         
-        //Si la constraseña tiene mas de 5 numeros, mas de 1 minuscula y mas de 2 mayusculas
+        //Si la constraseña tiene mas de 5 numeros, mas de 1 minuscula y mas de 2 mayusculas es fuerte.
         if (countNum>=5 && countMin>=1 && countMay>=2)
         	return true;
             
