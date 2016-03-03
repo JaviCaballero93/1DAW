@@ -8,7 +8,6 @@ public class Ahorcado {
 	private int fallos;
 	private Dictionary dict;
 	
-	
 	public Ahorcado() {
 		// TODO Auto-generated constructor stub
 		this("C:/Dict.txt");
@@ -32,7 +31,9 @@ public class Ahorcado {
 	public boolean buscarLetra(char letra) {
 		//Con esto nos quitamos el problema si el usuario introduce una mayuscula o una minuscula.
 		letra = Character.toUpperCase(letra);
+		
 		if(letraRepetida(letra) && palabra.indexOf(letra) == -1) {
+			
 			JOptionPane.showMessageDialog(null, "La letra introducida fue introducida antes y no esta en la palabra. Cuenta como error.");
 		}
 		
@@ -42,6 +43,7 @@ public class Ahorcado {
 		}
 			
 		else {
+			
 			letrasIntroducidas[turnos] = letra;
 			turnos++;
 		}
@@ -82,10 +84,8 @@ public class Ahorcado {
 		for(int i=0; i<palabraOculta.length(); i++) {
 			
 			temp = false;
-			
 			//Recorre letrasIntroducidas[]
 			for(int j=0; j<letrasIntroducidas.length; j++) {
-				
 				/* Si una letra de palabraOculta coincide con alguna letra de
 				 letrasIntroducidas[] (las que el jugador ha dicho)
 				 cambia temp a true, por lo que esa letra de palabraOculta
@@ -116,7 +116,6 @@ public class Ahorcado {
 	}
 	
 	public boolean youWin() {
-		
 		/* palabraOculta es igual a palabra cuando 
 		   palabraOculta no tiene ningun guion
 		   para ocultar letras, es decir, cuando ya 
