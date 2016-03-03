@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 import java.io.*;
+import javax.swing.JOptionPane;
 
 public class Dictionary {
 	
@@ -28,7 +29,8 @@ public class Dictionary {
 		}
 
 		catch(Exception e) {
-			System.out.println(e);
+			
+			JOptionPane.showMessageDialog(null, e);
 		}
 	}
 	
@@ -43,7 +45,8 @@ public class Dictionary {
 		}
 
 		catch(Exception e) {
-			System.out.println(e);
+			
+			JOptionPane.showMessageDialog(null, e);
 		}
 		
 		return text;
@@ -64,7 +67,8 @@ public class Dictionary {
 		}
 
 		catch(Exception e) {
-			System.out.println(e);
+			
+			JOptionPane.showMessageDialog(null, e);
 		}
 		
 		return text;
@@ -73,13 +77,15 @@ public class Dictionary {
 	public void escribir(String nuevaPalabra) {
 
 		try(PrintWriter writer = new PrintWriter(new FileWriter(file, true))) {
+			
 			writer.print("\n");
 			writer.print(nuevaPalabra);
 			palabras++;
 		}
 
 		catch(Exception e) {
-			System.out.println(e);
+		
+			JOptionPane.showMessageDialog(null, e);
 		}
 	}
 }
