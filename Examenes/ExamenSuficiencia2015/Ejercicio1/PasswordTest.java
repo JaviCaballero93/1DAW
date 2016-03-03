@@ -5,25 +5,25 @@ import objects.Password;
 
 public class PasswordTest {
  
-    public static void main(String[] args) {
+        public static void main(String[] args) {
  
-        //Introducimos el tamaño del array y la longitud del password
-        int tamaño = Integer.parseInt(JOptionPane.showInputDialog("Introduce un tamaño para el array"));
-        int longitud = Integer.parseInt(JOptionPane.showInputDialog("Introduce la longitud del password"));
-        String text = "";
- 
-        //Creamos los arrays
-        Password contraseñas[] = new Password[tamaño];
-        boolean fortaleza[] = new boolean[tamaño];
- 
-        //Creamos objetos, indicamos si es fuerte y mostramos la contraseña y su fortaleza.
-        for(int i=0; i<contraseñas.length; i++){
-            
-        	contraseñas[i] = new Password(longitud);
-            fortaleza[i] = contraseñas[i].esFuerte();
-            text += contraseñas[i].getContraseña() + " " + fortaleza[i] + "\n";
+                //Introducimos el tamaÃ±o del array y la longitud del password
+                int tamaÃ±o = Integer.parseInt(JOptionPane.showInputDialog("Introduce un tamaÃ±o para el array"));
+                int longitud = Integer.parseInt(JOptionPane.showInputDialog("Introduce la longitud del password"));
+                String text = "";
+                 
+                //Creamos los arrays
+                Password contraseÃ±as[] = new Password[tamaÃ±o];
+                boolean fortaleza[] = new boolean[tamaÃ±o];
+                 
+                //Creamos objetos, indicamos si es fuerte y mostramos la contraseÃ±a y su fortaleza.
+                for(int i=0; i<contraseÃ±as.length; i++){
+                            
+                        contraseÃ±as[i] = new Password(longitud);
+                        fortaleza[i] = contraseÃ±as[i].esFuerte();
+                        text += contraseÃ±as[i].getContraseÃ±a() + " " + fortaleza[i] + "\n";
+                }
+                        
+                JOptionPane.showMessageDialog(null, text);
         }
-        
-        JOptionPane.showMessageDialog(null, text);
-    }
 }
