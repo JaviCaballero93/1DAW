@@ -1,3 +1,5 @@
+package polinomios;
+
 public class Polinomio {
 	
 	int[]polinomio;
@@ -47,7 +49,6 @@ public class Polinomio {
 		
 		return resultSum;
 	}
-	
 	
 	public String toString() {
 		
