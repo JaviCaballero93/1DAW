@@ -14,6 +14,7 @@ public class Polinomio {
 			Monomio m = new Monomio(monomios[i]);
 			
 			if(i==0) {
+			
 				grado = m.getDegree();
 				polinomio = new int[grado+1];
 			}
