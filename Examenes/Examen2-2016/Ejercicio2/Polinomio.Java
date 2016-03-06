@@ -62,7 +62,7 @@ public class Polinomio {
 			if(polinomio[i] == 0)
 				continue;
 			
-			if(polinomio[i] != 1)
+			if(polinomio[i] != 1 || i == 0)
 				p += String.valueOf(polinomio[i]);
 			
 			if(i==1)
