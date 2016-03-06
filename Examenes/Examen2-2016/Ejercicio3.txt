@@ -1,0 +1,20 @@
+Contesta brevemente a las preguntas siguientes:
+
+1. ¿Qué se entiende por herencia en Java?
+
+
+
+2. ¿Cómo defines polimorfismo?
+
+El polimorfismo es la posibilidad de definir clases diferentes que tienen métodos o atributos denominados de forma idéntica, 
+pero que se comportan de manera distinta.
+
+3. Explica la diferencia que hay entre checked and unchecked exception
+
+La principal diferencia entre checked y unchecked exception es que las checked exceptions son controlados en tiempo de compilación 
+mientras que las unchecked exceptions se comprueban en tiempo de ejecución.
+
+4. What is the most restrictive access modifier that will allow members of one class to have access to members of another class in 
+the same package?
+
+Default access is the "package oriented" access modifier.
