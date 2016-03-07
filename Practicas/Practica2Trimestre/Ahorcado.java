@@ -23,11 +23,6 @@ public class Ahorcado {
 		fallos = 0;
 	}
 	
-	public String randomizePalabra() {
-		
-		return dict.getRandom().toLowerCase();
-	}
-	
 	public boolean buscarLetra(char letra) {
 		//Con esto nos quitamos el problema si el usuario introduce una mayuscula o una minuscula.
 		letra = Character.toUpperCase(letra);
