@@ -34,24 +34,6 @@ public class Dictionary {
 		}
 	}
 	
-	public String getAll() {
-		
-		String text = "";
-		
-		try(Scanner scanner = new Scanner(file)) {
-			while(scanner.hasNext()) {
-				text += scanner.nextLine() + "\n";
-			}
-		}
-
-		catch(Exception e) {
-			
-			JOptionPane.showMessageDialog(null, e);
-		}
-		
-		return text;
-	}
-	
 	public String getRandom() {
 		
 		String text = "";
@@ -72,20 +54,5 @@ public class Dictionary {
 		}
 		
 		return text;
-	}
-	
-	public void escribir(String nuevaPalabra) {
-
-		try(PrintWriter writer = new PrintWriter(new FileWriter(file, true))) {
-			
-			writer.print("\n");
-			writer.print(nuevaPalabra);
-			palabras++;
-		}
-
-		catch(Exception e) {
-		
-			JOptionPane.showMessageDialog(null, e);
-		}
 	}
 }
