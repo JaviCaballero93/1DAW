@@ -6,7 +6,7 @@ public abstract class ConstruirTablero {
 
 	public static Tablero construir() {
 		
-		Pieza piezas[][] = new Pieza[8][8];
+		Pieza[][] piezas = new Pieza[8][8];
 		Tablero tablero = new Tablero();
 		
 		addPiezasBlancas(piezas, tablero);
